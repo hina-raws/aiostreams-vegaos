@@ -4482,6 +4482,10 @@ msgstr "الترتيب حسب"
 msgid "Sound"
 msgstr "الصوتيات"
 
+#: src/features/versions/version-list.tsx
+msgid "Sound ({mute}) can't be played on this device"
+msgstr ""
+
 #: src/app/history/page.tsx
 msgid "Source"
 msgstr "المصدر"
@@ -5184,6 +5188,10 @@ msgstr "لدى هذا المستخدم رقم سري."
 #: src/app/player/page.tsx
 msgid "This version is no longer available."
 msgstr "هذه النسخة لم تعد متاحة."
+
+#: src/app/player/page.tsx
+msgid "This version's sound ({sound}) can't be played on this device. Pick another version."
+msgstr ""
 
 #: src/app/player/page.tsx
 msgid "This video didn't load."

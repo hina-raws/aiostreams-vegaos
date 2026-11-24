@@ -15,6 +15,7 @@ import {
 } from '@tanstack/react-query';
 import JellyfinWebApp from './app';
 import { persister } from './lib/cache';
+import { primeAudioSupport } from './lib/playback/audio-support';
 import { followReachable } from './lib/jellyfin/connection';
 import { startI18n } from './lib/i18n';
 import { setupTv } from './lib/tv';
@@ -49,8 +50,9 @@ for (const el of [container, document.body]) {
   };
 }
 
-// The page waits for its language, so it never shows English first.
-void startI18n().then(() =>
+// The page waits for its language, so it never shows English first, and asks
+// the device what sound it decodes before any version is listed.
+void Promise.all([startI18n(), primeAudioSupport()]).then(() =>
   ReactDOM.createRoot(container).render(
     <React.StrictMode>
       <I18nProvider i18n={i18n}>

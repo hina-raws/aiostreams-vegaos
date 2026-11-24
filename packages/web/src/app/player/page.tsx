@@ -33,6 +33,10 @@ import {
 import { type Live, useLive } from '@/lib/live-value';
 import { chosenPlayer } from '@/lib/playback/player-choice';
 import {
+  hasPlayableAudio,
+  unplayableAudio,
+} from '@/lib/playback/audio-support';
+import {
   directUrl,
   requiredHeaders,
   useYouTubeStream,
@@ -220,8 +224,17 @@ export function PlayerPage({
   const listed = usePlaybackInfo(itemId, { enabled: !local && !sourceId });
   const [instead, setInstead] = React.useState<string>();
   const [autoPlay] = useSetting(settings.playback.autoPlayFirst);
-  const named =
-    instead || sourceId || playableSources(listed.data)[0]?.Id || undefined;
+  // The versions this device could play, each with the tracks the server read
+  // from its name. Only a list asks for those, so this is where they are.
+  const versions = React.useMemo(
+    () => (local ? [local.source!] : playableSources(listed.data)),
+    [local, listed.data]
+  );
+  // A version named by the page plays as named; Play, which names none, starts
+  // on the first whose sound this device decodes rather than on a silent one.
+  const firstPlayable =
+    versions.find((s) => hasPlayableAudio(s.MediaStreams)) ?? versions[0];
+  const named = instead || sourceId || firstPlayable?.Id || undefined;
   const info = usePlaybackInfo(itemId, {
     sourceId: named,
     enabled: !local && !!named,
@@ -246,6 +259,25 @@ export function PlayerPage({
   const [covered, setCovered] = React.useState(true);
   const sources = local ? [local.source!] : playableSources(info.data);
   const source = named ? sources.find((s) => s.Id === named) : sources[0];
+  // The list's copy of the version, which is the one that says what its sound
+  // is: naming a version answers without its tracks.
+  const described =
+    versions.find((s) => s.Id === source?.Id) ??
+    (source?.MediaStreams?.length ? source : undefined);
+  // Silence with no explanation reads as a broken app. The server only direct
+  // plays, so a version whose every track this device cannot decode plays mute,
+  // and saying which sound it was is what lets someone pick another version.
+  const warnedAudio = React.useRef<string | null>(null);
+  React.useEffect(() => {
+    if (!source || local?.local || !described) return;
+    if (hasPlayableAudio(described.MediaStreams)) return;
+    if (warnedAudio.current === source.Id) return;
+    warnedAudio.current = source.Id ?? null;
+    const sound = unplayableAudio(described.MediaStreams).join(', ');
+    toast.warning(
+      t`This version's sound (${sound}) can't be played on this device. Pick another version.`
+    );
+  }, [source, local]);
   const channel = item.data?.Type === 'TvChannel';
   const gone =
     !playing &&

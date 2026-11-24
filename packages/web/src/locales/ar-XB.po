@@ -4478,6 +4478,10 @@ msgstr ""
 msgid "Sound"
 msgstr ""
 
+#: src/features/versions/version-list.tsx
+msgid "Sound ({mute}) can't be played on this device"
+msgstr ""
+
 #: src/app/history/page.tsx
 msgid "Source"
 msgstr ""
@@ -5179,6 +5183,10 @@ msgstr ""
 
 #: src/app/player/page.tsx
 msgid "This version is no longer available."
+msgstr ""
+
+#: src/app/player/page.tsx
+msgid "This version's sound ({sound}) can't be played on this device. Pick another version."
 msgstr ""
 
 #: src/app/player/page.tsx

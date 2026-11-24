@@ -4482,6 +4482,10 @@ msgstr "Sortează după"
 msgid "Sound"
 msgstr "Sunet"
 
+#: src/features/versions/version-list.tsx
+msgid "Sound ({mute}) can't be played on this device"
+msgstr ""
+
 #: src/app/history/page.tsx
 msgid "Source"
 msgstr "Sursă"
@@ -5184,6 +5188,10 @@ msgstr "Acest utilizator are un PIN."
 #: src/app/player/page.tsx
 msgid "This version is no longer available."
 msgstr "Această versiune nu mai este disponibilă."
+
+#: src/app/player/page.tsx
+msgid "This version's sound ({sound}) can't be played on this device. Pick another version."
+msgstr ""
 
 #: src/app/player/page.tsx
 msgid "This video didn't load."

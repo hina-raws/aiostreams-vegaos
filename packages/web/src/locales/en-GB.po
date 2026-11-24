@@ -4478,6 +4478,10 @@ msgstr "Sort by"
 msgid "Sound"
 msgstr "Sound"
 
+#: src/features/versions/version-list.tsx
+msgid "Sound ({mute}) can't be played on this device"
+msgstr "Sound ({mute}) can't be played on this device"
+
 #: src/app/history/page.tsx
 msgid "Source"
 msgstr "Source"
@@ -5180,6 +5184,10 @@ msgstr "This user has a PIN."
 #: src/app/player/page.tsx
 msgid "This version is no longer available."
 msgstr "This version is no longer available."
+
+#: src/app/player/page.tsx
+msgid "This version's sound ({sound}) can't be played on this device. Pick another version."
+msgstr "This version's sound ({sound}) can't be played on this device. Pick another version."
 
 #: src/app/player/page.tsx
 msgid "This video didn't load."

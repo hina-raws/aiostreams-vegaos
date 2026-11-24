@@ -10,6 +10,8 @@ export interface AudioFacts {
   lang?: string;
   visualImpaired?: boolean;
   default?: boolean;
+  /** Sound this engine cannot decode, which no pick should land on. */
+  unplayable?: boolean;
 }
 
 const DESCRIPTION =
@@ -39,6 +41,10 @@ export function betterAudioFor<T extends AudioFacts>(
   languages: string[],
   preferDefault: boolean
 ): T | undefined {
+  // A track the engine cannot decode is silence; the rest of the file's own
+  // sound decides, and only a file with nothing else keeps the pick.
+  const decodable = tracks.filter((track) => !track.unplayable);
+  if (decodable.length) tracks = decodable;
   const rank = (track: T) => order.indexOf(audioType(track));
   const usual = tracks.filter((track) => rank(track) <= order.indexOf('main'));
   const pool = usual.length ? usual : tracks;

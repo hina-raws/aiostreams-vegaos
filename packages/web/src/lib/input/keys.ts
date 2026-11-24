@@ -9,10 +9,12 @@ import { t } from '@lingui/core/macro';
 /** TV remotes and the Xbox web view report these by code only. */
 const KEY_CODES: Record<number, string> = {
   19: 'MediaPause',
+  27: 'Back',
   138: 'ArrowUp',
   139: 'ArrowDown',
   140: 'ArrowLeft',
   141: 'ArrowRight',
+  179: 'MediaPlayPause',
   195: 'GamepadA',
   196: 'GamepadB',
   197: 'GamepadX',
@@ -35,6 +37,8 @@ const KEY_CODES: Record<number, string> = {
   413: 'MediaStop',
   415: 'MediaPlay',
   417: 'MediaFastForward',
+  227: 'MediaRewind',
+  228: 'MediaFastForward',
   427: 'ChannelUp',
   428: 'ChannelDown',
   461: 'Back',

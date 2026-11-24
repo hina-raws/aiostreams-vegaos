@@ -75,7 +75,8 @@ msgstr "{downloaded} baixados"
 msgid "{episodeCount, plural, one {# episode watched} other {# episodes watched}}"
 msgstr "{episodeCount, plural, one {# episódio assistido} other {# episódios assistidos}}"
 
-#: src/app/downloads/page.tsx src/app/history/page.tsx
+#: src/app/downloads/page.tsx
+#: src/app/history/page.tsx
 #: src/app/item/_components/seasons.tsx
 msgid "{episodeCount, plural, one {# episode} other {# episodes}}"
 msgstr "{episodeCount, plural, one {# episódio} other {# episódios}}"
@@ -134,8 +135,10 @@ msgstr "{inProgress, plural, one {# em andamento} other {# em andamento}}"
 msgid "{key} is taken by {taken}"
 msgstr "{key} já está sendo usada por {taken}"
 
-#: src/app/downloads/page.tsx src/app/live-tv/_components/channel-details.tsx
-#: src/components/media/card-preview.tsx src/components/media/episodes.tsx
+#: src/app/downloads/page.tsx
+#: src/app/live-tv/_components/channel-details.tsx
+#: src/components/media/card-preview.tsx
+#: src/components/media/episodes.tsx
 msgid "{left} left"
 msgstr "{left} restantes"
 
@@ -228,11 +231,13 @@ msgstr "{selected, plural, one {# selecionado} other {# selecionados}}"
 msgid "{shown}×"
 msgstr "{shown}×"
 
-#: src/features/player/controls.tsx src/features/player/picture-in-picture.tsx
+#: src/features/player/controls.tsx
+#: src/features/player/picture-in-picture.tsx
 msgid "{stepSeconds, plural, one {Back # second} other {Back # seconds}}"
 msgstr "{stepSeconds, plural, one {Voltar # segundo} other {Voltar # segundos}}"
 
-#: src/features/player/controls.tsx src/features/player/picture-in-picture.tsx
+#: src/features/player/controls.tsx
+#: src/features/player/picture-in-picture.tsx
 msgid "{stepSeconds, plural, one {Forward # second} other {Forward # seconds}}"
 msgstr "{stepSeconds, plural, one {Avançar # segundo} other {Avançar # segundos}}"
 
@@ -389,7 +394,8 @@ msgstr "Sobre"
 msgid "Accent"
 msgstr "Cor de destaque"
 
-#: src/app/settings/page.tsx src/components/shell/layout.tsx
+#: src/app/settings/page.tsx
+#: src/components/shell/layout.tsx
 #: src/components/shell/nav/mobile-nav.tsx
 msgid "Account"
 msgstr "Conta"
@@ -402,8 +408,11 @@ msgstr "Conta e servidor"
 msgid "Actions"
 msgstr "Ações"
 
-#: src/app/history/page.tsx src/app/home/page.tsx src/app/settings/apps.tsx
-#: src/app/settings/cache.tsx src/app/settings/interface.tsx
+#: src/app/history/page.tsx
+#: src/app/home/page.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/cache.tsx
+#: src/app/settings/interface.tsx
 #: src/components/shell/layout.tsx
 msgid "Activity"
 msgstr "Atividade"
@@ -432,7 +441,8 @@ msgstr "Adicionar atalho para {label}"
 msgid "Add a language"
 msgstr "Adicionar um idioma"
 
-#: src/app.tsx src/app/servers/page.tsx
+#: src/app.tsx
+#: src/app/servers/page.tsx
 msgid "Add a server"
 msgstr "Adicionar um servidor"
 
@@ -458,7 +468,8 @@ msgstr "Adicionar aos favoritos"
 msgid "Add from Continue watching"
 msgstr "Adicionar de Continuar assistindo"
 
-#: src/app/item/_components/actions.tsx src/components/media/item-menu.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/media/item-menu.tsx
 #: src/features/playlists/playlists.tsx
 msgid "Add to playlist"
 msgstr "Adicionar à playlist"
@@ -471,7 +482,8 @@ msgstr "Adicionar a esta playlist"
 msgid "Added {name}"
 msgstr "{name} foi adicionado"
 
-#: src/app/player/page.tsx src/features/playlists/playlists.tsx
+#: src/app/player/page.tsx
+#: src/features/playlists/playlists.tsx
 msgid "Added to {name}"
 msgstr "Adicionado a {name}"
 
@@ -499,12 +511,15 @@ msgstr "Exibição"
 msgid "Airs {day} · {until}"
 msgstr "Estreia {day} · {until}"
 
-#: src/app/discover/page.tsx src/app/favourites/page.tsx
-#: src/components/media/kind-tabs.tsx src/features/versions/version-list.tsx
+#: src/app/discover/page.tsx
+#: src/app/favourites/page.tsx
+#: src/components/media/kind-tabs.tsx
+#: src/features/versions/version-list.tsx
 msgid "All"
 msgstr "Todos"
 
-#: src/app/home/page.tsx src/features/live-tv/live-tv.ts
+#: src/app/home/page.tsx
+#: src/features/live-tv/live-tv.ts
 msgid "All channels"
 msgstr "Todos os canais"
 
@@ -540,7 +555,8 @@ msgstr "Também quando você voltar após meia hora. Quem estava assistindo cont
 msgid "Alt"
 msgstr "Alt"
 
-#: src/app/settings/audio.tsx src/app/settings/interface.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/interface.tsx
 #: src/app/settings/subtitles.tsx
 msgid "Always"
 msgstr "Sempre"
@@ -553,7 +569,8 @@ msgstr "Sempre exibe legendas no seu idioma, quando disponíveis na versão."
 msgid "An audio track you pick while watching a show sets the language for its other episodes. Picking what the settings above would play forgets it."
 msgstr "A faixa de áudio escolhida durante a reprodução de uma série define o idioma dos outros episódios. Ao escolher a faixa que seria reproduzida pelas configurações acima, essa preferência é apagada."
 
-#: src/app/settings/about.tsx src/app/settings/page.tsx
+#: src/app/settings/about.tsx
+#: src/app/settings/page.tsx
 #: src/lib/hosts/jellyfin-android.ts
 msgid "Android app"
 msgstr "App Android"
@@ -562,7 +579,8 @@ msgstr "App Android"
 msgid "Android's own player, which uses less battery: the screen shows the video as the device decodes it, at the video's frame rate. Plays video the device can decode. Styled subtitles look as they do in mpv."
 msgstr "Reprodutor nativo do Android, que consome menos bateria: a tela exibe o vídeo conforme o dispositivo o decodifica, na taxa de quadros do vídeo. Reproduz vídeos que o dispositivo consegue decodificar. As legendas estilizadas são exibidas como no mpv."
 
-#: src/app/settings/playback.tsx src/lib/input/actions.ts
+#: src/app/settings/playback.tsx
+#: src/lib/input/actions.ts
 msgid "Anime upscaling"
 msgstr "Melhoria de imagem para animes"
 
@@ -582,7 +600,8 @@ msgstr "Outro relay"
 msgid "Anyone with the invite can join, from any server."
 msgstr "Qualquer pessoa com o convite pode participar, de qualquer servidor."
 
-#: src/app/settings/page.tsx src/lib/hosts/native-shell.ts
+#: src/app/settings/page.tsx
+#: src/lib/hosts/native-shell.ts
 msgid "App"
 msgstr "Aplicativo"
 
@@ -646,7 +665,8 @@ msgstr "Perguntar ao abrir o aplicativo"
 msgid "At 0% there is no background."
 msgstr "Em 0%, não há plano de fundo."
 
-#: src/app/settings/page.tsx src/features/player/options.tsx
+#: src/app/settings/page.tsx
+#: src/features/player/options.tsx
 #: src/features/remote/remote-sheet.tsx
 msgid "Audio"
 msgstr "Áudio"
@@ -671,7 +691,8 @@ msgstr "Áudio: {label}"
 msgid "Auto-play the first version"
 msgstr "Reproduzir automaticamente a primeira versão"
 
-#: src/app/settings/audio.tsx src/app/settings/interface.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/interface.tsx
 #: src/app/settings/playback.tsx
 msgid "Automatic"
 msgstr "Automático"
@@ -680,11 +701,16 @@ msgstr "Automático"
 msgid "Automatic lists episodes on narrow screens and puts them in a row on wide ones."
 msgstr "Automático: exibe os episódios em uma lista em telas estreitas e em uma linha em telas largas."
 
-#: src/app/player/page.tsx src/app/servers/page.tsx
-#: src/app/settings/_components/licenses.tsx src/app/sign-in/page.tsx
-#: src/app/trailer/page.tsx src/components/shell/history-buttons.tsx
-#: src/features/party/not-in-party.tsx src/features/player/controls.tsx
-#: src/features/player/next-episode.tsx src/lib/input/actions.ts
+#: src/app/player/page.tsx
+#: src/app/servers/page.tsx
+#: src/app/settings/_components/licenses.tsx
+#: src/app/sign-in/page.tsx
+#: src/app/trailer/page.tsx
+#: src/components/shell/history-buttons.tsx
+#: src/features/party/not-in-party.tsx
+#: src/features/player/controls.tsx
+#: src/features/player/next-episode.tsx
+#: src/lib/input/actions.ts
 msgid "Back"
 msgstr "Voltar"
 
@@ -697,7 +723,8 @@ msgid "Back in the player"
 msgstr "Ao sair do player"
 
 #: src/app/settings/_components/version-settings.tsx
-#: src/app/settings/subtitles.tsx src/app/settings/theme.tsx
+#: src/app/settings/subtitles.tsx
+#: src/app/settings/theme.tsx
 msgid "Background"
 msgstr "Plano de fundo"
 
@@ -725,7 +752,8 @@ msgstr "Antes do fim"
 msgid "Below zero plays the sound earlier, as for wireless headphones that lag behind the picture."
 msgstr "Valores negativos antecipam o áudio, ideal para fones sem fio cujo som atrasa em relação à imagem."
 
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Bigger subtitles"
 msgstr "Legendas maiores"
 
@@ -805,7 +833,8 @@ msgstr "Reprodutor integrado"
 msgid "Buttons, progress bars and highlights."
 msgstr "Botões, barras de progresso e destaques."
 
-#: src/app/settings/page.tsx src/lib/hosts/shell/player.ts
+#: src/app/settings/page.tsx
+#: src/lib/hosts/shell/player.ts
 msgid "Cache"
 msgstr "Cache"
 
@@ -813,8 +842,11 @@ msgstr "Cache"
 msgid "Cache size"
 msgstr "Tamanho do cache"
 
-#: src/app/calendar/page.tsx src/app/home/page.tsx src/app/settings/apps.tsx
-#: src/app/settings/interface.tsx src/components/shell/layout.tsx
+#: src/app/calendar/page.tsx
+#: src/app/home/page.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/interface.tsx
+#: src/components/shell/layout.tsx
 msgid "Calendar"
 msgstr "Calendário"
 
@@ -822,7 +854,8 @@ msgstr "Calendário"
 msgid "Can’t reach"
 msgstr "Não foi possível acessar"
 
-#: src/app/sign-in/page.tsx src/components/shell/unreachable.tsx
+#: src/app/sign-in/page.tsx
+#: src/components/shell/unreachable.tsx
 #: src/lib/jellyfin/client.ts
 msgid "Can't reach the server"
 msgstr "Não foi possível acessar o servidor"
@@ -831,8 +864,10 @@ msgstr "Não foi possível acessar o servidor"
 msgid "Can’t reach the server"
 msgstr "Não foi possível acessar o servidor"
 
-#: src/app/downloads/page.tsx src/app/settings/_components/version-settings.tsx
-#: src/components/send-report.tsx src/features/playlists/playlists.tsx
+#: src/app/downloads/page.tsx
+#: src/app/settings/_components/version-settings.tsx
+#: src/components/send-report.tsx
+#: src/features/playlists/playlists.tsx
 #: src/lib/i18n.ts
 msgid "Cancel"
 msgstr "Cancelar"
@@ -869,7 +904,8 @@ msgstr "Alterar pasta"
 msgid "Change reactions"
 msgstr "Alterar reações"
 
-#: src/app/settings/account.tsx src/app/sign-in/page.tsx
+#: src/app/settings/account.tsx
+#: src/app/sign-in/page.tsx
 #: src/components/media/no-catalogs.tsx
 msgid "Change server"
 msgstr "Alterar servidor"
@@ -898,9 +934,13 @@ msgstr "Canal anterior"
 msgid "Channel up"
 msgstr "Próximo canal"
 
-#: src/app/favourites/page.tsx src/app/live-tv/page.tsx src/app/search/page.tsx
-#: src/app/settings/audio.tsx src/features/live-tv/channel-list.tsx
-#: src/features/player/live.tsx src/features/player/options.tsx
+#: src/app/favourites/page.tsx
+#: src/app/live-tv/page.tsx
+#: src/app/search/page.tsx
+#: src/app/settings/audio.tsx
+#: src/features/live-tv/channel-list.tsx
+#: src/features/player/live.tsx
+#: src/features/player/options.tsx
 msgid "Channels"
 msgstr "Canais"
 
@@ -908,11 +948,13 @@ msgstr "Canais"
 msgid "Channels show here once your setup has an addon with live TV."
 msgstr "Os canais aparecerão aqui assim que a sua configuração tiver um addon com TV ao vivo."
 
-#: src/features/player/chapters.tsx src/features/player/keys.ts
+#: src/features/player/chapters.tsx
+#: src/features/player/keys.ts
 msgid "Chapter {number}"
 msgstr "Capítulo {number}"
 
-#: src/features/player/chapters.tsx src/features/player/options.tsx
+#: src/features/player/chapters.tsx
+#: src/features/player/options.tsx
 msgid "Chapters"
 msgstr "Capítulos"
 
@@ -924,7 +966,8 @@ msgstr "Bate-papo"
 msgid "Check now"
 msgstr "Verificar agora"
 
-#: src/app/settings/apps.tsx src/lib/hosts/shell/index.ts
+#: src/app/settings/apps.tsx
+#: src/lib/hosts/shell/index.ts
 msgid "Checking…"
 msgstr "Verificando…"
 
@@ -961,7 +1004,8 @@ msgid "Clear selection"
 msgstr "Limpar seleção"
 
 #: src/components/shell/crash-report.tsx
-#: src/components/shell/window-controls.tsx src/features/player/mini-player.tsx
+#: src/components/shell/window-controls.tsx
+#: src/features/player/mini-player.tsx
 #: src/features/player/picture-in-picture.tsx
 msgid "Close"
 msgstr "Fechar"
@@ -978,8 +1022,10 @@ msgstr "Código copiado"
 msgid "Code or invite link"
 msgstr "Código ou link de convite"
 
-#: src/app/discover/page.tsx src/app/item/_components/collection.tsx
-#: src/app/search/page.tsx src/lib/format.ts
+#: src/app/discover/page.tsx
+#: src/app/item/_components/collection.tsx
+#: src/app/search/page.tsx
+#: src/lib/format.ts
 msgid "Collections"
 msgstr "Coleções"
 
@@ -995,7 +1041,8 @@ msgstr "Cores e CSS personalizado"
 msgid "Combine movie and show results"
 msgstr "Combinar resultados de filmes e séries"
 
-#: src/app/settings/audio.tsx src/lib/playback/controller.ts
+#: src/app/settings/audio.tsx
+#: src/lib/playback/controller.ts
 msgid "Commentary"
 msgstr "Comentário"
 
@@ -1019,7 +1066,8 @@ msgstr "Os ids de configuração também são omitidos da cópia."
 msgid "Configuration password"
 msgstr "Senha da configuração"
 
-#: src/app/item/_components/no-details.tsx src/components/media/no-catalogs.tsx
+#: src/app/item/_components/no-details.tsx
+#: src/components/media/no-catalogs.tsx
 msgid "Configure"
 msgstr "Configurar"
 
@@ -1039,11 +1087,13 @@ msgstr "Conectado ao Discord."
 msgid "Connection lost"
 msgstr "Conexão perdida"
 
-#: src/app.tsx src/app/sign-in/page.tsx
+#: src/app.tsx
+#: src/app/sign-in/page.tsx
 msgid "Continue"
 msgstr "Continuar"
 
-#: src/app/home/page.tsx src/app/settings/interface.tsx
+#: src/app/home/page.tsx
+#: src/app/settings/interface.tsx
 #: src/features/player/next-episode.tsx
 msgid "Continue watching"
 msgstr "Continuar assistindo"
@@ -1056,7 +1106,8 @@ msgstr "Controles"
 msgid "Copied as JSON"
 msgstr "Copiado como JSON"
 
-#: src/app/settings/apps.tsx src/components/shell/crash-report.tsx
+#: src/app/settings/apps.tsx
+#: src/components/shell/crash-report.tsx
 msgid "Copy"
 msgstr "Copiar"
 
@@ -1068,7 +1119,8 @@ msgstr "Copiar como JSON"
 msgid "Copy code"
 msgstr "Copiar código"
 
-#: src/app/player/page.tsx src/features/party/in-party.tsx
+#: src/app/player/page.tsx
+#: src/features/party/in-party.tsx
 msgid "Copy link"
 msgstr "Copiar link"
 
@@ -1080,7 +1132,8 @@ msgstr "Copiar link do stream"
 msgid "Corner button"
 msgstr "Botão de canto"
 
-#: src/app/player/page.tsx src/features/playlists/playlists.tsx
+#: src/app/player/page.tsx
+#: src/features/playlists/playlists.tsx
 msgid "Could not add to {name}"
 msgstr "Não foi possível adicionar a {name}"
 
@@ -1104,11 +1157,13 @@ msgstr "Não foi possível copiar o código"
 msgid "Could not copy the invite link"
 msgstr "Não foi possível copiar o link de convite"
 
-#: src/app/player/page.tsx src/features/versions/version-list.tsx
+#: src/app/player/page.tsx
+#: src/features/versions/version-list.tsx
 msgid "Could not copy the link"
 msgstr "Não foi possível copiar o link"
 
-#: src/app/settings/_components/version-settings.tsx src/app/settings/apps.tsx
+#: src/app/settings/_components/version-settings.tsx
+#: src/app/settings/apps.tsx
 msgid "Could not copy them"
 msgstr "Não foi possível copiá-los"
 
@@ -1316,7 +1371,9 @@ msgstr "Roxo profundo"
 
 #. No colour of its own
 #: src/app/settings/_components/version-settings.tsx
-#: src/app/settings/subtitles.tsx src/app/settings/theme.tsx src/lib/i18n.ts
+#: src/app/settings/subtitles.tsx
+#: src/app/settings/theme.tsx
+#: src/lib/i18n.ts
 msgid "Default"
 msgstr "Padrão"
 
@@ -1328,7 +1385,8 @@ msgstr "Atraso"
 msgid "Delay: {delayLabel}"
 msgstr "Atraso: {delayLabel}"
 
-#: src/app/downloads/page.tsx src/features/playlists/playlists.tsx
+#: src/app/downloads/page.tsx
+#: src/features/playlists/playlists.tsx
 msgid "Delete"
 msgstr "Excluir"
 
@@ -1352,11 +1410,13 @@ msgstr "Decrescente"
 msgid "Desert"
 msgstr "Deserto"
 
-#: src/app/settings/about.tsx src/app/settings/page.tsx
+#: src/app/settings/about.tsx
+#: src/app/settings/page.tsx
 msgid "Desktop app"
 msgstr "App para desktop"
 
-#: src/app/item/_components/details.tsx src/components/media/item-menu.tsx
+#: src/app/item/_components/details.tsx
+#: src/components/media/item-menu.tsx
 #: src/features/versions/version-list.tsx
 msgid "Details"
 msgstr "Detalhes"
@@ -1409,12 +1469,15 @@ msgstr "O Discord não está em execução neste computador."
 msgid "Discord refused the status: {message}"
 msgstr "O Discord recusou o status: {message}"
 
-#: src/app/discover/page.tsx src/app/settings/apps.tsx
-#: src/app/settings/interface.tsx src/components/shell/layout.tsx
+#: src/app/discover/page.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/interface.tsx
+#: src/components/shell/layout.tsx
 msgid "Discover"
 msgstr "Explorar"
 
-#: src/components/shell/unreachable.tsx src/features/live-tv/live-reminders.tsx
+#: src/components/shell/unreachable.tsx
+#: src/features/live-tv/live-reminders.tsx
 msgid "Dismiss"
 msgstr "Dispensar"
 
@@ -1452,7 +1515,8 @@ msgstr "Apoie meu trabalho"
 
 #: src/app/settings/_components/reaction-setting.tsx
 #: src/app/settings/_components/version-settings.tsx
-#: src/components/send-report.tsx src/features/player/subtitle-sync.tsx
+#: src/components/send-report.tsx
+#: src/features/player/subtitle-sync.tsx
 #: src/features/playlists/playlists.tsx
 msgid "Done"
 msgstr "Pronto"
@@ -1461,7 +1525,8 @@ msgstr "Pronto"
 msgid "Down"
 msgstr "Para baixo"
 
-#: src/app/item/_components/actions.tsx src/app/settings/about.tsx
+#: src/app/item/_components/actions.tsx
+#: src/app/settings/about.tsx
 #: src/components/media/item-menu.tsx
 #: src/features/downloads/download-button.tsx
 #: src/features/versions/version-list.tsx
@@ -1484,11 +1549,13 @@ msgstr "Download pausado"
 msgid "Download the show"
 msgstr "Baixar a série"
 
-#: src/app/downloads/page.tsx src/features/downloads/download-button.tsx
+#: src/app/downloads/page.tsx
+#: src/features/downloads/download-button.tsx
 msgid "Downloaded"
 msgstr "Baixado"
 
-#: src/app/downloads/page.tsx src/features/downloads/download-button.tsx
+#: src/app/downloads/page.tsx
+#: src/features/downloads/download-button.tsx
 msgid "Downloading"
 msgstr "Baixando"
 
@@ -1500,8 +1567,10 @@ msgstr "Baixando a versão {version}…"
 msgid "Downloading, {percent}%"
 msgstr "Baixando: {percent}%"
 
-#: src/app/downloads/page.tsx src/app/settings/interface.tsx
-#: src/app/settings/page.tsx src/components/shell/layout.tsx
+#: src/app/downloads/page.tsx
+#: src/app/settings/interface.tsx
+#: src/app/settings/page.tsx
+#: src/components/shell/layout.tsx
 #: src/components/shell/unreachable.tsx
 msgid "Downloads"
 msgstr "Downloads"
@@ -1583,7 +1652,8 @@ msgstr "Insira este código em Conexão rápida no app que já está conectado o
 msgid "Enter your password."
 msgstr "Digite sua senha."
 
-#: src/components/media/episodes.tsx src/features/player/pause-screen.tsx
+#: src/components/media/episodes.tsx
+#: src/features/player/pause-screen.tsx
 msgid "Episode {number}"
 msgstr "Episódio {number}"
 
@@ -1595,8 +1665,10 @@ msgstr "Detalhes do episódio"
 msgid "Episode layout"
 msgstr "Layout dos episódios"
 
-#: src/app/item/_components/seasons.tsx src/app/search/page.tsx
-#: src/app/settings/interface.tsx src/features/player/episodes.tsx
+#: src/app/item/_components/seasons.tsx
+#: src/app/search/page.tsx
+#: src/app/settings/interface.tsx
+#: src/features/player/episodes.tsx
 #: src/features/player/options.tsx
 msgid "Episodes"
 msgstr "Episódios"
@@ -1637,7 +1709,8 @@ msgstr "Tudo"
 msgid "Everything unwatched"
 msgstr "Tudo que ainda não foi assistido"
 
-#: src/components/shell/window-controls.tsx src/features/player/options.tsx
+#: src/components/shell/window-controls.tsx
+#: src/features/player/options.tsx
 msgid "Exit full screen"
 msgstr "Sair da tela cheia"
 
@@ -1661,7 +1734,8 @@ msgstr "Degradê"
 msgid "Failed"
 msgstr "Falha"
 
-#: src/features/remote/remote-sheet.tsx src/lib/input/keys.ts
+#: src/features/remote/remote-sheet.tsx
+#: src/lib/input/keys.ts
 msgid "Fast forward"
 msgstr "Avanço rápido"
 
@@ -1669,13 +1743,17 @@ msgstr "Avanço rápido"
 msgid "Faster"
 msgstr "Mais rápido"
 
-#: src/app/item/_components/actions.tsx src/features/live-tv/channel-list.tsx
+#: src/app/item/_components/actions.tsx
+#: src/features/live-tv/channel-list.tsx
 msgid "Favourite"
 msgstr "Favorito"
 
-#: src/app/discover/page.tsx src/app/favourites/page.tsx
-#: src/app/settings/apps.tsx src/app/settings/interface.tsx
-#: src/components/shell/layout.tsx src/features/live-tv/live-tv.ts
+#: src/app/discover/page.tsx
+#: src/app/favourites/page.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/interface.tsx
+#: src/components/shell/layout.tsx
+#: src/features/live-tv/live-tv.ts
 msgid "Favourites"
 msgstr "Favoritos"
 
@@ -1711,7 +1789,8 @@ msgstr "Buscar versões ao abrir um título"
 msgid "Finding a version to download"
 msgstr "Buscando versão para baixar"
 
-#: src/app/downloads/page.tsx src/app/player/page.tsx
+#: src/app/downloads/page.tsx
+#: src/app/player/page.tsx
 #: src/features/versions/version-picker.tsx
 msgid "Finding a version…"
 msgstr "Buscando uma versão…"
@@ -1788,7 +1867,8 @@ msgstr "Avançar"
 msgid "Frame timings"
 msgstr "Tempos dos quadros"
 
-#: src/app/live-tv/_components/channel-details.tsx src/features/player/live.tsx
+#: src/app/live-tv/_components/channel-details.tsx
+#: src/features/player/live.tsx
 #: src/features/versions/version-list.tsx
 msgid "From the start"
 msgstr "Desde o início"
@@ -1802,7 +1882,8 @@ msgid "Full"
 msgstr "Completa"
 
 #: src/app/live-tv/_components/channel-details.tsx
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Full screen"
 msgstr "Tela cheia"
 
@@ -1846,7 +1927,8 @@ msgstr "Verde"
 msgid "Grey"
 msgstr "Cinza"
 
-#: src/app/live-tv/page.tsx src/app/settings/_components/version-settings.tsx
+#: src/app/live-tv/page.tsx
+#: src/app/settings/_components/version-settings.tsx
 msgid "Group"
 msgstr "Grupo"
 
@@ -1858,7 +1940,8 @@ msgstr "Agrupar por dia"
 msgid "Groups"
 msgstr "Categorias"
 
-#: src/app/live-tv/_components/guide.tsx src/app/live-tv/page.tsx
+#: src/app/live-tv/_components/guide.tsx
+#: src/app/live-tv/page.tsx
 msgid "Guide"
 msgstr "Guia"
 
@@ -1923,8 +2006,10 @@ msgstr "Ocultar código QR"
 msgid "Hold"
 msgstr "Segurar"
 
-#: src/app/settings/apps.tsx src/app/settings/interface.tsx
-#: src/components/shell/layout.tsx src/lib/input/actions.ts
+#: src/app/settings/apps.tsx
+#: src/app/settings/interface.tsx
+#: src/components/shell/layout.tsx
+#: src/lib/input/actions.ts
 msgid "Home"
 msgstr "Início"
 
@@ -2008,11 +2093,13 @@ msgstr "Nos favoritos"
 msgid "In progress"
 msgstr "Em andamento"
 
-#: src/lib/playback/sound.ts src/lib/subtitles/delay.ts
+#: src/lib/playback/sound.ts
+#: src/lib/subtitles/delay.ts
 msgid "In sync"
 msgstr "Em sincronia"
 
-#: src/app/downloads/page.tsx src/features/downloads/download-button.tsx
+#: src/app/downloads/page.tsx
+#: src/features/downloads/download-button.tsx
 msgid "In the app's downloads"
 msgstr "Na pasta de downloads do app"
 
@@ -2080,7 +2167,8 @@ msgstr "API do Jellyfin"
 msgid "Join"
 msgstr "Entrar"
 
-#: src/features/party/not-in-party.tsx src/features/party/party-sheet.tsx
+#: src/features/party/not-in-party.tsx
+#: src/features/party/party-sheet.tsx
 msgid "Join a party"
 msgstr "Entrar na sessão"
 
@@ -2132,7 +2220,8 @@ msgstr "Salvo neste dispositivo."
 msgid "Kept on this device. Select + and press a key to add it; a remote, a gamepad or the scroll wheel works too."
 msgstr "Salvo neste dispositivo. Selecione + e pressione uma tecla para adicionar o atalho. Também é possível usar um controle remoto, um controle de videogame ou a roda do mouse."
 
-#: src/components/shell/input-setup.tsx src/lib/input/actions.ts
+#: src/components/shell/input-setup.tsx
+#: src/lib/input/actions.ts
 msgid "Keyboard shortcuts"
 msgstr "Atalhos de teclado"
 
@@ -2144,8 +2233,10 @@ msgstr "Teclas, controles remotos e controles de videogame"
 msgid "Label"
 msgstr "Rótulo"
 
-#: src/app/settings/audio.tsx src/app/settings/interface.tsx
-#: src/app/settings/page.tsx src/app/settings/subtitles.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/interface.tsx
+#: src/app/settings/page.tsx
+#: src/app/settings/subtitles.tsx
 msgid "Language"
 msgstr "Idioma"
 
@@ -2161,7 +2252,8 @@ msgstr "Idioma e saída de áudio"
 msgid "Language, home, grids and episodes"
 msgstr "Idioma, início, fileiras e episódios"
 
-#: src/app/settings/interface.tsx src/lib/subtitles/style.ts
+#: src/app/settings/interface.tsx
+#: src/lib/subtitles/style.ts
 msgid "Large"
 msgstr "Grande"
 
@@ -2242,8 +2334,10 @@ msgstr "Ouvindo…"
 msgid "Live"
 msgstr "Ao vivo"
 
-#: src/app/home/page.tsx src/app/live-tv/page.tsx
-#: src/app/settings/interface.tsx src/components/shell/layout.tsx
+#: src/app/home/page.tsx
+#: src/app/live-tv/page.tsx
+#: src/app/settings/interface.tsx
+#: src/components/shell/layout.tsx
 #: src/lib/input/actions.ts
 msgid "Live TV"
 msgstr "TV ao vivo"
@@ -2276,7 +2370,8 @@ msgstr "Busca as versões assim que a página de um título é aberta, para que 
 msgid "Lost the connection to {relay}. Reconnecting… Your player carries on, and gets back in step once it's back."
 msgstr "A conexão com {relay} foi perdida. Reconectando… A reprodução continua e será sincronizada novamente quando a conexão voltar."
 
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Lower subtitles"
 msgstr "Mover legendas para baixo"
 
@@ -2300,12 +2395,14 @@ msgstr "Marcar como assistido"
 msgid "Mark unaired episodes"
 msgstr "Marcar episódios que ainda não estrearam"
 
-#: src/app/history/page.tsx src/app/item/_components/actions.tsx
+#: src/app/history/page.tsx
+#: src/app/item/_components/actions.tsx
 #: src/components/media/item-menu.tsx
 msgid "Mark unwatched"
 msgstr "Marcar como não assistido"
 
-#: src/app/item/_components/actions.tsx src/components/media/item-menu.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/media/item-menu.tsx
 msgid "Mark watched"
 msgstr "Marcar como visto"
 
@@ -2373,9 +2470,12 @@ msgstr "Ausente"
 msgid "Monospace"
 msgstr "Monoespaçado"
 
-#: src/app/downloads/page.tsx src/app/item/_components/header.tsx
-#: src/components/media/episodes.tsx src/components/media/overview.tsx
-#: src/features/playlists/playlists.tsx src/features/versions/version-list.tsx
+#: src/app/downloads/page.tsx
+#: src/app/item/_components/header.tsx
+#: src/components/media/episodes.tsx
+#: src/components/media/overview.tsx
+#: src/features/playlists/playlists.tsx
+#: src/features/versions/version-list.tsx
 msgid "More"
 msgstr "Mais"
 
@@ -2421,9 +2521,12 @@ msgstr "Mover para cima"
 msgid "Moves between what's on screen, and to Search and Home. A gamepad's d-pad and left stick move too."
 msgstr "Navega entre os itens na tela e vai para Pesquisar e Início. O direcional e o analógico esquerdo do controle também permitem navegar."
 
-#: src/app/discover/page.tsx src/app/favourites/page.tsx
-#: src/app/search/page.tsx src/components/media/kind-tabs.tsx
-#: src/components/media/random-pick.tsx src/lib/format.ts
+#: src/app/discover/page.tsx
+#: src/app/favourites/page.tsx
+#: src/app/search/page.tsx
+#: src/components/media/kind-tabs.tsx
+#: src/components/media/random-pick.tsx
+#: src/lib/format.ts
 msgid "Movies"
 msgstr "Filmes"
 
@@ -2451,7 +2554,8 @@ msgstr "mpv nesta janela, com os controles e as configurações de reprodução 
 msgid "mpv.conf, input.conf, scripts and shaders in this folder apply to the built-in mpv."
 msgstr "O mpv.conf, o input.conf, os scripts e os shaders desta pasta são aplicados ao mpv integrado."
 
-#: src/features/player/picture-in-picture.tsx src/features/player/volume.tsx
+#: src/features/player/picture-in-picture.tsx
+#: src/features/player/volume.tsx
 #: src/lib/input/actions.ts
 msgid "Mute"
 msgstr "Silenciar"
@@ -2461,7 +2565,8 @@ msgid "Mute key"
 msgstr "Tecla de silenciar"
 
 #: src/app/settings/_components/version-settings.tsx
-#: src/components/media/sort-picker.tsx src/features/playlists/playlists.tsx
+#: src/components/media/sort-picker.tsx
+#: src/features/playlists/playlists.tsx
 msgid "Name"
 msgstr "Nome"
 
@@ -2489,7 +2594,8 @@ msgstr "Novo código"
 msgid "New playlist"
 msgstr "Nova playlist"
 
-#: src/features/player/controls.tsx src/features/remote/remote-sheet.tsx
+#: src/features/player/controls.tsx
+#: src/features/remote/remote-sheet.tsx
 #: src/lib/i18n.ts
 msgid "Next"
 msgstr "Próximo"
@@ -2498,7 +2604,8 @@ msgstr "Próximo"
 msgid "Next audio track"
 msgstr "Próxima faixa de áudio"
 
-#: src/app/player/page.tsx src/features/player/controls.tsx
+#: src/app/player/page.tsx
+#: src/features/player/controls.tsx
 #: src/lib/input/actions.ts
 msgid "Next channel"
 msgstr "Próximo canal"
@@ -2507,8 +2614,10 @@ msgstr "Próximo canal"
 msgid "Next chapter"
 msgstr "Próximo capítulo"
 
-#: src/app/settings/playback.tsx src/features/player/controls.tsx
-#: src/features/player/next-episode.tsx src/lib/input/actions.ts
+#: src/app/settings/playback.tsx
+#: src/features/player/controls.tsx
+#: src/features/player/next-episode.tsx
+#: src/lib/input/actions.ts
 msgid "Next episode"
 msgstr "Próximo episódio"
 
@@ -2532,15 +2641,18 @@ msgstr "Próxima legenda"
 msgid "Next track"
 msgstr "Próxima faixa"
 
-#: src/app/trailer/page.tsx src/features/player/controls.tsx
+#: src/app/trailer/page.tsx
+#: src/features/player/controls.tsx
 msgid "Next trailer"
 msgstr "Próximo trailer"
 
-#: src/app/home/page.tsx src/app/settings/interface.tsx
+#: src/app/home/page.tsx
+#: src/app/settings/interface.tsx
 msgid "Next up"
 msgstr "A seguir"
 
-#: src/app/settings/audio.tsx src/features/player/options.tsx
+#: src/app/settings/audio.tsx
+#: src/features/player/options.tsx
 msgid "Night mode"
 msgstr "Modo noturno"
 
@@ -2640,7 +2752,8 @@ msgstr "Nenhuma versão corresponde."
 msgid "No versions were found."
 msgstr "Nenhuma versão foi encontrada."
 
-#: src/app/settings/audio.tsx src/app/settings/subtitles.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/subtitles.tsx
 msgid "None"
 msgstr "Nenhum"
 
@@ -2648,12 +2761,14 @@ msgstr "Nenhum"
 msgid "None of your addons has details for {id}. Add a metadata addon to your configuration, then refresh."
 msgstr "Nenhum dos seus addons tem informações sobre {id}. Adicione um addon de metadados à sua configuração e depois atualize."
 
-#: src/app/settings/subtitles.tsx src/features/player/keys.ts
+#: src/app/settings/subtitles.tsx
+#: src/features/player/keys.ts
 #: src/lib/subtitles/style.ts
 msgid "Normal"
 msgstr "Normal"
 
-#: src/features/player/keys.ts src/lib/input/actions.ts
+#: src/features/player/keys.ts
+#: src/lib/input/actions.ts
 msgid "Normal speed"
 msgstr "Velocidade normal"
 
@@ -2705,7 +2820,8 @@ msgstr "Nenhum resultado encontrado."
 msgid "Nothing here yet. Add titles from their menu, or from the suggestions below."
 msgstr "Ainda não há nada aqui. Adicione títulos pelo menu de cada item ou escolha uma das sugestões abaixo."
 
-#: src/app/discover/page.tsx src/app/item/_components/collection.tsx
+#: src/app/discover/page.tsx
+#: src/app/item/_components/collection.tsx
 msgid "Nothing here."
 msgstr "Nada aqui."
 
@@ -2713,13 +2829,16 @@ msgstr "Nada aqui."
 msgid "Nothing is playing there."
 msgstr "Nenhum conteúdo está sendo reproduzido nesse dispositivo."
 
-#: src/app/favourites/page.tsx src/components/media/random-pick.tsx
+#: src/app/favourites/page.tsx
+#: src/components/media/random-pick.tsx
 msgid "Nothing marked as a favourite yet."
 msgstr "Você ainda não marcou nenhum título como favorito."
 
-#: src/app/discover/page.tsx src/app/live-tv/page.tsx
+#: src/app/discover/page.tsx
+#: src/app/live-tv/page.tsx
 #: src/app/settings/_components/licenses.tsx
-#: src/app/settings/_components/version-settings.tsx src/app/settings/audio.tsx
+#: src/app/settings/_components/version-settings.tsx
+#: src/app/settings/audio.tsx
 #: src/app/settings/interface.tsx
 msgid "Nothing matches."
 msgstr "Nenhum resultado correspondente."
@@ -2772,8 +2891,10 @@ msgstr "Nenhum"
 msgid "Ocean"
 msgstr "Oceano"
 
-#: src/app/settings/audio.tsx src/app/settings/subtitles.tsx
-#: src/features/player/options.tsx src/features/remote/remote-sheet.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/subtitles.tsx
+#: src/features/player/options.tsx
+#: src/features/remote/remote-sheet.tsx
 #: src/lib/playback/sound.ts
 msgid "Off"
 msgstr "Desativado"
@@ -2874,13 +2995,17 @@ msgstr "Ops!"
 msgid "Opacity: {backgroundOpacity}%"
 msgstr "Opacidade: {backgroundOpacity}%"
 
-#: src/app/history/page.tsx src/app/settings/account.tsx
-#: src/app/settings/apps.tsx src/app/settings/downloads.tsx
-#: src/components/media/item-menu.tsx src/components/media/random-pick.tsx
+#: src/app/history/page.tsx
+#: src/app/settings/account.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/downloads.tsx
+#: src/components/media/item-menu.tsx
+#: src/components/media/random-pick.tsx
 msgid "Open"
 msgstr "Abrir"
 
-#: src/app/downloads/page.tsx src/app/settings/apps.tsx
+#: src/app/downloads/page.tsx
+#: src/app/settings/apps.tsx
 msgid "Open folder"
 msgstr "Abrir pasta"
 
@@ -3069,10 +3194,12 @@ msgstr "Cole os filtros rápidos em formato JSON ou o link de um arquivo que os 
 msgid "Pattern"
 msgstr "Padrão"
 
-#: src/app/downloads/page.tsx src/features/player/controls.tsx
+#: src/app/downloads/page.tsx
+#: src/features/player/controls.tsx
 #: src/features/player/mini-player.tsx
 #: src/features/player/picture-in-picture.tsx
-#: src/features/remote/remote-sheet.tsx src/lib/input/actions.ts
+#: src/features/remote/remote-sheet.tsx
+#: src/lib/input/actions.ts
 #: src/lib/input/keys.ts
 msgid "Pause"
 msgstr "Pausar"
@@ -3141,7 +3268,8 @@ msgstr "Selecione a linha da legenda correspondente à fala que você ouviu em {
 msgid "Pick the version to download."
 msgstr "Escolha a versão para baixar."
 
-#: src/app/settings/apps.tsx src/app/settings/playback.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/playback.tsx
 #: src/features/player/options.tsx
 msgid "Picture-in-picture"
 msgstr "Modo picture-in-picture (PiP)"
@@ -3174,14 +3302,19 @@ msgstr "PIN ou senha"
 msgid "Pink"
 msgstr "Rosa"
 
-#: src/app/item/_components/header.tsx src/app/item/_components/no-details.tsx
+#: src/app/item/_components/header.tsx
+#: src/app/item/_components/no-details.tsx
 #: src/app/live-tv/_components/channel-details.tsx
-#: src/components/media/hero.tsx src/components/media/item-menu.tsx
-#: src/components/media/random-pick.tsx src/features/player/controls.tsx
+#: src/components/media/hero.tsx
+#: src/components/media/item-menu.tsx
+#: src/components/media/random-pick.tsx
+#: src/features/player/controls.tsx
 #: src/features/player/mini-player.tsx
 #: src/features/player/picture-in-picture.tsx
-#: src/features/playlists/playlists.tsx src/features/remote/remote-sheet.tsx
-#: src/lib/input/actions.ts src/lib/input/keys.ts
+#: src/features/playlists/playlists.tsx
+#: src/features/remote/remote-sheet.tsx
+#: src/lib/input/actions.ts
+#: src/lib/input/keys.ts
 msgid "Play"
 msgstr "Reproduzir"
 
@@ -3225,7 +3358,8 @@ msgstr "Reproduzir agora"
 msgid "Play on"
 msgstr "Assistir em"
 
-#: src/app/item/_components/actions.tsx src/components/media/item-menu.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/media/item-menu.tsx
 #: src/features/remote/remote-sheet.tsx
 msgid "Play on another device"
 msgstr "Assistir em outro dispositivo"
@@ -3282,8 +3416,10 @@ msgstr "Tentar reproduzir com o mpv"
 msgid "Play/Pause"
 msgstr "Reproduzir/Pausar"
 
-#: src/app/settings/page.tsx src/lib/hosts/shell/exo-stats.ts
-#: src/lib/hosts/shell/player.ts src/lib/playback/webgpu.ts
+#: src/app/settings/page.tsx
+#: src/lib/hosts/shell/exo-stats.ts
+#: src/lib/hosts/shell/player.ts
+#: src/lib/playback/webgpu.ts
 msgid "Playback"
 msgstr "Reprodução"
 
@@ -3303,7 +3439,8 @@ msgstr "Falha na reprodução: {failure}"
 msgid "Played here"
 msgstr "Reproduzido aqui"
 
-#: src/app/settings/about.tsx src/app/settings/playback.tsx
+#: src/app/settings/about.tsx
+#: src/app/settings/playback.tsx
 #: src/lib/input/actions.ts
 msgid "Player"
 msgstr "Reprodutor"
@@ -3317,9 +3454,12 @@ msgid "Player window"
 msgstr "Janela do player"
 
 #: src/app/history/_components/sessions.tsx
-#: src/app/item/_components/trailer.tsx src/features/party/in-party.tsx
-#: src/features/player/chapters.tsx src/features/player/episodes.tsx
-#: src/features/playlists/playlists.tsx src/features/versions/version-list.tsx
+#: src/app/item/_components/trailer.tsx
+#: src/features/party/in-party.tsx
+#: src/features/player/chapters.tsx
+#: src/features/player/episodes.tsx
+#: src/features/playlists/playlists.tsx
+#: src/features/versions/version-list.tsx
 msgid "Playing"
 msgstr "Assistindo agora"
 
@@ -3343,12 +3483,14 @@ msgstr "Reproduzindo em {name}"
 msgid "Playing on and the next and previous buttons pass over episodes marked as filler. You can still play one yourself."
 msgstr "A reprodução contínua e os botões Próximo e Anterior pulam os episódios marcados como filler. Você ainda pode reproduzi-los manualmente."
 
-#: src/app/item/_components/actions.tsx src/features/player/options.tsx
+#: src/app/item/_components/actions.tsx
+#: src/features/player/options.tsx
 #: src/features/playlists/playlists.tsx
 msgid "Playlist"
 msgstr "Playlist"
 
-#: src/components/shell/layout.tsx src/features/playlists/playlists.tsx
+#: src/components/shell/layout.tsx
+#: src/features/playlists/playlists.tsx
 msgid "Playlists"
 msgstr "Playlists"
 
@@ -3414,13 +3556,16 @@ msgctxt "Episode segments showing the next episode"
 msgid "Previews"
 msgstr "Prévias"
 
-#: src/features/player/controls.tsx src/features/remote/remote-sheet.tsx
+#: src/features/player/controls.tsx
+#: src/features/remote/remote-sheet.tsx
 #: src/lib/i18n.ts
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/app/player/page.tsx src/features/player/controls.tsx
-#: src/features/player/live.tsx src/lib/input/actions.ts
+#: src/app/player/page.tsx
+#: src/features/player/controls.tsx
+#: src/features/player/live.tsx
+#: src/lib/input/actions.ts
 msgid "Previous channel"
 msgstr "Canal anterior"
 
@@ -3428,7 +3573,8 @@ msgstr "Canal anterior"
 msgid "Previous chapter"
 msgstr "Capítulo anterior"
 
-#: src/features/player/controls.tsx src/lib/input/actions.ts
+#: src/features/player/controls.tsx
+#: src/lib/input/actions.ts
 msgid "Previous episode"
 msgstr "Episódio anterior"
 
@@ -3440,7 +3586,8 @@ msgstr "Mês anterior"
 msgid "Previous track"
 msgstr "Faixa anterior"
 
-#: src/app/trailer/page.tsx src/features/player/controls.tsx
+#: src/app/trailer/page.tsx
+#: src/features/player/controls.tsx
 msgid "Previous trailer"
 msgstr "Trailer anterior"
 
@@ -3456,11 +3603,13 @@ msgstr "Restaura todos os atalhos para as configurações originais."
 msgid "QR code"
 msgstr "Código QR"
 
-#: src/app/settings/playback.tsx src/features/player/options.tsx
+#: src/app/settings/playback.tsx
+#: src/features/player/options.tsx
 msgid "Quality"
 msgstr "Qualidade"
 
-#: src/app/settings/account.tsx src/app/sign-in/page.tsx
+#: src/app/settings/account.tsx
+#: src/app/sign-in/page.tsx
 msgid "Quick Connect"
 msgstr "Conexão rápida"
 
@@ -3481,7 +3630,8 @@ msgstr "Barra de navegação lateral"
 msgid "Rainforest"
 msgstr "Floresta tropical"
 
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Raise subtitles"
 msgstr "Elevar legendas"
 
@@ -3493,7 +3643,8 @@ msgstr "Aumenta o canal central, onde o som surround coloca os diálogos. Não v
 msgid "Random"
 msgstr "Sortear"
 
-#: src/app/item/_components/actions.tsx src/components/media/item-menu.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/media/item-menu.tsx
 #: src/components/media/random-pick.tsx
 msgid "Random episode"
 msgstr "Episódio aleatório"
@@ -3506,7 +3657,8 @@ msgstr "Favorito aleatório"
 msgid "Random pick"
 msgstr "Escolha aleatória"
 
-#: src/app/item/_components/actions.tsx src/app/item/_components/rating.tsx
+#: src/app/item/_components/actions.tsx
+#: src/app/item/_components/rating.tsx
 msgid "Rate"
 msgstr "Avaliar"
 
@@ -3514,7 +3666,8 @@ msgstr "Avaliar"
 msgid "Rate season"
 msgstr "Avaliar temporada"
 
-#: src/components/media/scores.tsx src/components/media/sort-picker.tsx
+#: src/components/media/scores.tsx
+#: src/components/media/sort-picker.tsx
 msgid "Rating"
 msgstr "Avaliação"
 
@@ -3551,7 +3704,8 @@ msgstr "Pesquisas recentes"
 msgid "Reconnecting to the party…"
 msgstr "Reconectando à sessão…"
 
-#: src/components/shell/unreachable.tsx src/features/player/controls.tsx
+#: src/components/shell/unreachable.tsx
+#: src/features/player/controls.tsx
 #: src/features/player/picture-in-picture.tsx
 msgid "Reconnecting…"
 msgstr "Reconectando…"
@@ -3560,7 +3714,8 @@ msgstr "Reconectando…"
 msgid "Red"
 msgstr "Vermelho"
 
-#: src/app/item/_components/no-details.tsx src/components/media/no-catalogs.tsx
+#: src/app/item/_components/no-details.tsx
+#: src/components/media/no-catalogs.tsx
 msgid "Refresh"
 msgstr "Atualizar"
 
@@ -3584,7 +3739,8 @@ msgstr "Data de lançamento"
 msgid "Released"
 msgstr "Lançado"
 
-#: src/app/settings/audio.tsx src/app/settings/subtitles.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/subtitles.tsx
 msgid "Remember picks per show"
 msgstr "Lembrar escolhas por série"
 
@@ -3604,7 +3760,8 @@ msgstr "Lembrete removido"
 msgid "Reminder set"
 msgstr "Lembrete ativado"
 
-#: src/app/search/page.tsx src/app/servers/page.tsx
+#: src/app/search/page.tsx
+#: src/app/servers/page.tsx
 #: src/app/settings/_components/common.tsx
 #: src/app/settings/_components/version-settings.tsx
 msgid "Remove"
@@ -3614,7 +3771,8 @@ msgstr "Remover"
 msgid "Remove {key}"
 msgstr "Remover {key}"
 
-#: src/app/settings/_components/common.tsx src/features/party/in-party.tsx
+#: src/app/settings/_components/common.tsx
+#: src/features/party/in-party.tsx
 msgid "Remove {name}"
 msgstr "Remover {name}"
 
@@ -3676,7 +3834,8 @@ msgstr "Relatório copiado"
 msgid "Request failed ({status})"
 msgstr "Falha na solicitação ({status})"
 
-#: src/app/history/page.tsx src/app/settings/_components/reaction-setting.tsx
+#: src/app/history/page.tsx
+#: src/app/settings/_components/reaction-setting.tsx
 #: src/features/player/options.tsx
 msgid "Reset"
 msgstr "Redefinir"
@@ -3729,7 +3888,8 @@ msgstr "Restaurar"
 msgid "Results of what you searched for."
 msgstr "Resultados do que você pesquisou."
 
-#: src/app/downloads/page.tsx src/components/media/item-menu.tsx
+#: src/app/downloads/page.tsx
+#: src/components/media/item-menu.tsx
 #: src/components/media/random-pick.tsx
 msgid "Resume"
 msgstr "Retomar"
@@ -3742,7 +3902,8 @@ msgstr "Retomar {code}"
 msgid "Resume all"
 msgstr "Retomar tudo"
 
-#: src/app/item/_components/header.tsx src/features/versions/version-list.tsx
+#: src/app/item/_components/header.tsx
+#: src/features/versions/version-list.tsx
 #: src/lib/playback/use-player.ts
 msgid "Resume from {resumeAt}"
 msgstr "Retomar de {resumeAt}"
@@ -3755,7 +3916,8 @@ msgstr "Sincronizadas com ajuste de tempo automaticamente"
 msgid "Retry"
 msgstr "Tentar novamente"
 
-#: src/features/remote/remote-sheet.tsx src/lib/input/keys.ts
+#: src/features/remote/remote-sheet.tsx
+#: src/lib/input/keys.ts
 msgid "Rewind"
 msgstr "Rebobinar"
 
@@ -3796,7 +3958,8 @@ msgstr "S{s}E{e}"
 msgid "Sans serif"
 msgstr "Sem serifa"
 
-#: src/app/settings/_components/version-settings.tsx src/app/settings/apps.tsx
+#: src/app/settings/_components/version-settings.tsx
+#: src/app/settings/apps.tsx
 #: src/features/playlists/playlists.tsx
 msgid "Save"
 msgstr "Salvar"
@@ -3877,10 +4040,13 @@ msgstr "SDH"
 msgid "SDH, with sounds described"
 msgstr "SDH, com sons descritos"
 
-#: src/app/discover/page.tsx src/app/search/page.tsx
+#: src/app/discover/page.tsx
+#: src/app/search/page.tsx
 #: src/app/settings/_components/licenses.tsx
-#: src/app/settings/_components/version-settings.tsx src/app/settings/apps.tsx
-#: src/components/shell/layout.tsx src/lib/input/actions.ts
+#: src/app/settings/_components/version-settings.tsx
+#: src/app/settings/apps.tsx
+#: src/components/shell/layout.tsx
+#: src/lib/input/actions.ts
 msgid "Search"
 msgstr "Pesquisar"
 
@@ -3920,7 +4086,9 @@ msgstr "Buscar posição"
 msgid "Seek bar previews"
 msgstr "Prévias da barra de busca"
 
-#: src/app/history/page.tsx src/lib/i18n.ts src/lib/input/actions.ts
+#: src/app/history/page.tsx
+#: src/lib/i18n.ts
+#: src/lib/input/actions.ts
 msgid "Select"
 msgstr "Selecionar"
 
@@ -3928,7 +4096,8 @@ msgstr "Selecionar"
 msgid "Select all"
 msgstr "Selecionar tudo"
 
-#: src/components/send-report.tsx src/features/party/chat.tsx
+#: src/components/send-report.tsx
+#: src/features/party/chat.tsx
 msgid "Send"
 msgstr "Enviar"
 
@@ -3936,7 +4105,8 @@ msgstr "Enviar"
 msgid "Send a report"
 msgstr "Enviar um relatório"
 
-#: src/app/settings/apps.tsx src/components/shell/crash-report.tsx
+#: src/app/settings/apps.tsx
+#: src/components/shell/crash-report.tsx
 msgid "Send report"
 msgstr "Enviar relatório"
 
@@ -3972,7 +4142,8 @@ msgstr "Envia os detalhes deste dispositivo e o registro recente do aplicativo p
 msgid "Serif"
 msgstr "Serifa"
 
-#: src/app/settings/about.tsx src/app/settings/account.tsx
+#: src/app/settings/about.tsx
+#: src/app/settings/account.tsx
 msgid "Server"
 msgstr "Servidor"
 
@@ -3988,7 +4159,8 @@ msgstr "erro no servidor"
 msgid "Set by hand"
 msgstr "Definido manualmente"
 
-#: src/app/settings/page.tsx src/components/shell/layout.tsx
+#: src/app/settings/page.tsx
+#: src/components/shell/layout.tsx
 msgid "Settings"
 msgstr "Configurações"
 
@@ -4085,9 +4257,12 @@ msgstr "Mostrando páginas salvas"
 msgid "Shown"
 msgstr "Exibido"
 
-#: src/app/discover/page.tsx src/app/favourites/page.tsx
-#: src/app/search/page.tsx src/components/media/kind-tabs.tsx
-#: src/components/media/random-pick.tsx src/lib/format.ts
+#: src/app/discover/page.tsx
+#: src/app/favourites/page.tsx
+#: src/app/search/page.tsx
+#: src/components/media/kind-tabs.tsx
+#: src/components/media/random-pick.tsx
+#: src/lib/format.ts
 msgid "Shows"
 msgstr "Séries"
 
@@ -4143,7 +4318,8 @@ msgstr "Entrar"
 msgid "Sign in failed"
 msgstr "Falha ao entrar"
 
-#: src/app/servers/page.tsx src/app/settings/account.tsx
+#: src/app/servers/page.tsx
+#: src/app/settings/account.tsx
 msgid "Sign out"
 msgstr "Sair"
 
@@ -4163,11 +4339,13 @@ msgstr "Sair deste servidor?"
 msgid "Signed out"
 msgstr "Desconectado"
 
-#: src/app/settings/subtitles.tsx src/lib/playback/controller.ts
+#: src/app/settings/subtitles.tsx
+#: src/lib/playback/controller.ts
 msgid "Signs and songs"
 msgstr "Textos e músicas"
 
-#: src/app/settings/subtitles.tsx src/features/player/options.tsx
+#: src/app/settings/subtitles.tsx
+#: src/features/player/options.tsx
 msgid "Size"
 msgstr "Tamanho"
 
@@ -4263,7 +4441,8 @@ msgstr "Espaço {n}: {emoji}"
 msgid "Slower"
 msgstr "Mais lento"
 
-#: src/app/settings/interface.tsx src/lib/subtitles/style.ts
+#: src/app/settings/interface.tsx
+#: src/lib/subtitles/style.ts
 msgid "Small"
 msgstr "Pequeno"
 
@@ -4271,7 +4450,8 @@ msgstr "Pequeno"
 msgid "Small labels on each version for what it has, from packs you link or badges you make."
 msgstr "Etiquetas pequenas em cada versão sobre o que ela contém, de pacotes vinculados ou selos criados por você."
 
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Smaller subtitles"
 msgstr "Legendas menores"
 
@@ -4279,7 +4459,8 @@ msgstr "Legendas menores"
 msgid "Solid"
 msgstr "Sólido"
 
-#: src/lib/party/actions.ts src/lib/party/party.ts
+#: src/lib/party/actions.ts
+#: src/lib/party/party.ts
 msgid "Someone"
 msgstr "Alguém"
 
@@ -4295,10 +4476,15 @@ msgstr "Algo que este dispositivo não consegue ler"
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: src/app/settings/audio.tsx src/app/settings/interface.tsx
+#: src/app/settings/audio.tsx
+#: src/app/settings/interface.tsx
 #: src/features/player/options.tsx
 msgid "Sound"
 msgstr "Som"
+
+#: src/features/versions/version-list.tsx
+msgid "Sound ({mute}) can't be played on this device"
+msgstr ""
 
 #: src/app/history/page.tsx
 msgid "Source"
@@ -4356,11 +4542,13 @@ msgstr "Iniciando…"
 msgid "Starts without subtitles."
 msgstr "Começa sem legendas."
 
-#: src/features/player/options.tsx src/lib/input/actions.ts
+#: src/features/player/options.tsx
+#: src/lib/input/actions.ts
 msgid "Statistics"
 msgstr "Estatísticas"
 
-#: src/app/history/page.tsx src/app/settings/apps.tsx
+#: src/app/history/page.tsx
+#: src/app/settings/apps.tsx
 msgid "Status"
 msgstr "Status"
 
@@ -4372,7 +4560,8 @@ msgstr "Permanece como está"
 msgid "Stereo"
 msgstr "Estéreo"
 
-#: src/features/remote/remote-sheet.tsx src/lib/input/actions.ts
+#: src/features/remote/remote-sheet.tsx
+#: src/lib/input/actions.ts
 #: src/lib/input/keys.ts
 msgid "Stop"
 msgstr "Parar"
@@ -4385,7 +4574,8 @@ msgstr "Parar de ouvir"
 msgid "Stops playing"
 msgstr "Interrompe a reprodução"
 
-#: src/app/player/page.tsx src/features/versions/version-list.tsx
+#: src/app/player/page.tsx
+#: src/features/versions/version-list.tsx
 msgid "Stream link copied"
 msgstr "Link do stream copiado"
 
@@ -4397,7 +4587,8 @@ msgstr "Esticar"
 msgid "Studios"
 msgstr "Estúdios"
 
-#: src/app/settings/interface.tsx src/features/player/options.tsx
+#: src/app/settings/interface.tsx
+#: src/features/player/options.tsx
 msgid "Style"
 msgstr "Estilo"
 
@@ -4425,8 +4616,10 @@ msgstr "Tamanho da legenda: {label}"
 msgid "Subtitle types"
 msgstr "Tipos de legenda"
 
-#: src/app/settings/page.tsx src/app/settings/subtitles.tsx
-#: src/features/player/options.tsx src/features/remote/remote-sheet.tsx
+#: src/app/settings/page.tsx
+#: src/app/settings/subtitles.tsx
+#: src/features/player/options.tsx
+#: src/features/remote/remote-sheet.tsx
 msgid "Subtitles"
 msgstr "Legendas"
 
@@ -4502,7 +4695,8 @@ msgstr "Trocar"
 msgid "Switch server"
 msgstr "Trocar de servidor"
 
-#: src/app/settings/account.tsx src/components/media/no-catalogs.tsx
+#: src/app/settings/account.tsx
+#: src/components/media/no-catalogs.tsx
 #: src/components/shell/layout.tsx
 msgid "Switch user"
 msgstr "Mudar de perfil"
@@ -4515,7 +4709,8 @@ msgstr "Alterna a TV para uma taxa de atualização adequada a cada vídeo, para
 msgid "Sync automatically"
 msgstr "Sincronizar automaticamente"
 
-#: src/features/player/subtitle-sync.tsx src/lib/input/actions.ts
+#: src/features/player/subtitle-sync.tsx
+#: src/lib/input/actions.ts
 msgid "Sync by ear"
 msgstr "Sincronizar de ouvido"
 
@@ -4844,7 +5039,8 @@ msgstr "A saída de vídeo muda quando o aplicativo for aberto novamente."
 msgid "The whole show"
 msgstr "A série inteira"
 
-#: src/app/settings/page.tsx src/app/settings/theme.tsx
+#: src/app/settings/page.tsx
+#: src/app/settings/theme.tsx
 msgid "Theme"
 msgstr "Tema"
 
@@ -4994,6 +5190,10 @@ msgid "This version is no longer available."
 msgstr "Esta versão não está mais disponível."
 
 #: src/app/player/page.tsx
+msgid "This version's sound ({sound}) can't be played on this device. Pick another version."
+msgstr ""
+
+#: src/app/player/page.tsx
 msgid "This video didn't load."
 msgstr "Este vídeo não carregou."
 
@@ -5021,11 +5221,13 @@ msgstr "Tempo de cada destaque"
 msgid "Timing"
 msgstr "Sincronização"
 
-#: src/app/history/page.tsx src/app/settings/interface.tsx
+#: src/app/history/page.tsx
+#: src/app/settings/interface.tsx
 msgid "Title"
 msgstr "Título"
 
-#: src/app/settings/apps.tsx src/app/settings/cache.tsx
+#: src/app/settings/apps.tsx
+#: src/app/settings/cache.tsx
 #: src/app/settings/interface.tsx
 msgid "Title pages"
 msgstr "Páginas de títulos"
@@ -5034,7 +5236,8 @@ msgstr "Páginas de títulos"
 msgid "Titles, synopses and version names stay in the language the server sends."
 msgstr "Títulos, sinopses e nomes das versões ficam no idioma em que o servidor os envia."
 
-#: src/app/calendar/page.tsx src/app/live-tv/page.tsx
+#: src/app/calendar/page.tsx
+#: src/app/live-tv/page.tsx
 msgid "Today"
 msgstr "Hoje"
 
@@ -5070,12 +5273,14 @@ msgstr "Faixa {n}"
 msgid "Tracks"
 msgstr "Faixas"
 
-#: src/app/item/_components/actions.tsx src/features/trailers/preview.tsx
+#: src/app/item/_components/actions.tsx
+#: src/features/trailers/preview.tsx
 #: src/lib/playback/trailers.ts
 msgid "Trailer"
 msgstr "Trailer"
 
-#: src/app/item/_components/trailers.tsx src/app/settings/interface.tsx
+#: src/app/item/_components/trailers.tsx
+#: src/app/settings/interface.tsx
 msgid "Trailers"
 msgstr "Trailers"
 
@@ -5087,9 +5292,12 @@ msgstr "Tentados em ordem para as legendas que a configuração abaixo exibe."
 msgid "Troubleshooting"
 msgstr "Solução de problemas"
 
-#: src/app/downloads/page.tsx src/app/sign-in/page.tsx
-#: src/components/media/random-pick.tsx src/features/party/not-in-party.tsx
-#: src/features/versions/version-list.tsx src/lib/playback/transcoding.ts
+#: src/app/downloads/page.tsx
+#: src/app/sign-in/page.tsx
+#: src/components/media/random-pick.tsx
+#: src/features/party/not-in-party.tsx
+#: src/features/versions/version-list.tsx
+#: src/lib/playback/transcoding.ts
 #: src/lib/playback/use-player.ts
 msgid "Try again"
 msgstr "Tentar novamente"
@@ -5134,7 +5342,8 @@ msgstr "Digite o nome de um lançamento para ver os selos que ele recebe."
 msgid "Typewriter"
 msgstr "Máquina de escrever"
 
-#: src/components/media/episodes.tsx src/lib/format.ts
+#: src/components/media/episodes.tsx
+#: src/lib/format.ts
 msgid "Unaired"
 msgstr "Não estreou"
 
@@ -5154,7 +5363,8 @@ msgstr "Incompleto"
 msgid "Unknown language"
 msgstr "Idioma desconhecido"
 
-#: src/features/player/picture-in-picture.tsx src/features/player/volume.tsx
+#: src/features/player/picture-in-picture.tsx
+#: src/features/player/volume.tsx
 msgid "Unmute"
 msgstr "Ativar som"
 
@@ -5218,7 +5428,8 @@ msgstr "Atualizações, mpv e solução de problemas"
 msgid "Updates, picture-in-picture, mpv and troubleshooting"
 msgstr "Atualizações, picture-in-picture, mpv e solução de problemas"
 
-#: src/app/settings/about.tsx src/components/shell/usage-stats.tsx
+#: src/app/settings/about.tsx
+#: src/components/shell/usage-stats.tsx
 msgid "Usage statistics"
 msgstr "Estatísticas de uso"
 
@@ -5290,7 +5501,8 @@ msgstr "A versão {version} está pronta para instalar."
 msgid "Version searches at once"
 msgstr "Buscas de versões simultâneas"
 
-#: src/app/settings/playback.tsx src/features/player/options.tsx
+#: src/app/settings/playback.tsx
+#: src/features/player/options.tsx
 #: src/features/versions/version-picker.tsx
 msgid "Versions"
 msgstr "Versões"
@@ -5331,7 +5543,8 @@ msgstr "Saída de vídeo"
 msgid "View"
 msgstr "Ver"
 
-#: src/app/settings/_components/licenses.tsx src/app/settings/about.tsx
+#: src/app/settings/_components/licenses.tsx
+#: src/app/settings/about.tsx
 msgid "Visit"
 msgstr "Visitar"
 
@@ -5343,7 +5556,8 @@ msgstr "Pesquisa por voz falhou"
 msgid "Volume"
 msgstr "Volume"
 
-#: src/features/player/gestures.ts src/features/player/keys.ts
+#: src/features/player/gestures.ts
+#: src/features/player/keys.ts
 msgid "Volume {percent}%"
 msgstr "Volume {percent}%"
 
@@ -5400,18 +5614,23 @@ msgstr "Assista como outra pessoa nesta configuração. Um usuário com PIN prec
 msgid "Watch parties"
 msgstr "Sessões compartilhadas"
 
-#: src/app/item/_components/actions.tsx src/components/shell/layout.tsx
-#: src/features/party/party-sheet.tsx src/features/player/options.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/shell/layout.tsx
+#: src/features/party/party-sheet.tsx
+#: src/features/player/options.tsx
 msgid "Watch party"
 msgstr "Sessão compartilhada"
 
-#: src/app/item/_components/actions.tsx src/components/shell/layout.tsx
-#: src/features/party/in-party.tsx src/features/party/party-sheet.tsx
+#: src/app/item/_components/actions.tsx
+#: src/components/shell/layout.tsx
+#: src/features/party/in-party.tsx
+#: src/features/party/party-sheet.tsx
 #: src/features/player/options.tsx
 msgid "Watch together"
 msgstr "Assistir juntos"
 
-#: src/app/discover/page.tsx src/app/history/page.tsx
+#: src/app/discover/page.tsx
+#: src/app/history/page.tsx
 #: src/app/item/_components/actions.tsx
 msgid "Watched"
 msgstr "Assistido"
@@ -5424,7 +5643,8 @@ msgstr "Assistido ×{playCount}"
 msgid "Watched marks and resume points are removed from this server. Favourites stay. Titles a tracker still lists come back when it next syncs."
 msgstr "Marcas de assistido e pontos de continuação são removidos deste servidor. Favoritos permanecem. Títulos que um rastreador ainda lista voltam na próxima sincronização."
 
-#: src/app/settings/page.tsx src/features/party/in-party.tsx
+#: src/app/settings/page.tsx
+#: src/features/party/in-party.tsx
 msgid "Watching"
 msgstr "Assistindo"
 
@@ -5627,7 +5847,8 @@ msgstr "Ontem"
 #: src/components/shell/nav/account.tsx
 #: src/components/shell/nav/corner-menu.tsx
 #: src/components/shell/nav/mobile-nav.tsx
-#: src/components/shell/nav/touch-rail.tsx src/components/shell/nav/tv-rail.tsx
+#: src/components/shell/nav/touch-rail.tsx
+#: src/components/shell/nav/tv-rail.tsx
 msgid "You"
 msgstr "Você"
 

@@ -21,6 +21,7 @@ import type {
   EngineState,
   EngineTrack,
 } from './engine';
+import { audioStreamsOf, canPlayAudio } from './audio-support';
 import { ownTrackLabel } from './controller';
 import {
   canFullscreen,
@@ -234,6 +235,9 @@ export function videoEngine(
     const listTracks = () => {
       const audio = video.current && audioTracksOf(video.current);
       const audioTracks = audio ? listed(audio) : [];
+      // The file's own sound, in its order, which is the order the tracks come
+      // in: a track the engine cannot decode is one no setting should choose.
+      const sounds = audioStreamsOf(file?.source.MediaStreams);
       const tracks: EngineTrack[] = [
         ...audioTracks.map((t, i) => ({
           id: String(i),
@@ -241,6 +245,10 @@ export function videoEngine(
           label: ownTrackLabel(t.label, t.language, i + 1),
           lang: t.language,
           title: t.label,
+          codec: sounds[i]?.Codec ?? undefined,
+          ...(sounds[i] && !canPlayAudio(sounds[i].Codec)
+            ? { unplayable: true }
+            : {}),
         })),
         ...ownTracks.map(ownSubtitleTrack),
         ...files.map(({ id, label }) => ({

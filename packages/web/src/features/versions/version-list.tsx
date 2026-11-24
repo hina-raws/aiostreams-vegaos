@@ -17,6 +17,10 @@ import {
 } from 'react-icons/bi';
 import { Button, IconButton } from '@aiostreams/ui/button';
 import { DropdownMenu, DropdownMenuItem } from '@aiostreams/ui/dropdown-menu';
+import {
+  hasPlayableAudio,
+  unplayableAudio,
+} from '@/lib/playback/audio-support';
 import { useMediaQuery } from '@aiostreams/ui/hooks/media-query';
 import { Skeleton } from '@aiostreams/ui/skeleton';
 import { TextInput } from '@aiostreams/ui/text-input';
@@ -495,6 +499,9 @@ export function Versions({
           if (isNotice(source))
             return <Notice key={source.Id} notice={source} />;
           const link = directUrl(client, item.Id!, source);
+          const mute = hasPlayableAudio(source.MediaStreams)
+            ? null
+            : unplayableAudio(source.MediaStreams).join(', ');
           const actions = [
             ...(!download && mayDownload && downloadable(source)
               ? [
@@ -589,6 +596,19 @@ export function Versions({
                       )}
                     >
                       {source.aiostreams.description}
+                    </span>
+                  )}
+                  {/* The server only direct plays, so a version whose sound this
+                      device cannot decode plays mute: say so before it is picked. */}
+                  {mute && (
+                    <span
+                      data-ui="version-audio-warning"
+                      className={cn(
+                        'block text-xs text-amber-300 [overflow-wrap:anywhere]',
+                        !compact && 'sm:text-sm'
+                      )}
+                    >
+                      <Trans>Sound ({mute}) can't be played on this device</Trans>
                     </span>
                   )}
                   {!!shownBadges.get(source)?.length && (

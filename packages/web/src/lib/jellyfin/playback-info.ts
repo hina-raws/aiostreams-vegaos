@@ -33,7 +33,7 @@ function withOwnId(source: SourceInfo): SourceInfo {
 
 /** What a list is read for; playing a version names it, which answers with all of it. */
 // eslint-disable-next-line lingui/no-unlocalized-strings -- Jellyfin's field names
-const LISTED_FIELDS = ['Id', 'Type', 'Name', 'RunTimeTicks', 'aiostreams'];
+const LISTED_FIELDS = ['Id', 'Type', 'Name', 'RunTimeTicks', 'aiostreams', 'MediaStreams'];
 
 /**
  * Naming a version also gets its subtitles from subtitle addons, as does a
