@@ -11,3 +11,9 @@ metadata.json
 data/
 testing/
 build/
+# Vega app: staged bundle, build outputs, packaged app
+packages/vega/assets/
+packages/vega/build/
+packages/vega/buildinfo.json
+packages/vega/generated/
+*.vpkg

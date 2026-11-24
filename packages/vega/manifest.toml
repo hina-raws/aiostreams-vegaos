@@ -1,0 +1,68 @@
+schema-version = 1
+
+[package]
+title = "AIOStreams"
+version = "0.1.0"
+# Floor so local builds pass vpt validate; pass an increasing --build-number for every Appstore upload.
+build-number = 1
+id = "com.amazondeveloper.aiostreamsvega"
+
+[os.version]
+min = "2.0"
+target = "2.0"
+
+# A server the viewer runs themselves is often plain http on a LAN, and WebView
+# blocks cleartext from 4.0.2 on unless the app allows it.
+[network-traffic-policy.cleartext]
+allowed-domains = ["*"]
+
+[needs]
+[wants]
+[[wants.module]]
+id = "/com.amazon.kepler.net.net_manager@INetManager"
+
+# The web renderer draws the page.
+[[wants.service]]
+id = "com.amazon.webview.renderer_service"
+
+# The remote's field entry: the page signs in to a server with a text field.
+[[wants.service]]
+id = "com.amazon.inputmethod.service"
+
+# Video and audio the page plays through its <video> element.
+[[wants.service]]
+id = "com.amazon.media.server"
+
+[[wants.service]]
+id = "com.amazon.mediametrics.service"
+
+[[wants.service]]
+id = "com.amazon.mediabuffer.service"
+
+[[wants.service]]
+id = "com.amazon.mediatransform.service"
+
+[[wants.service]]
+id = "com.amazon.audio.stream"
+
+# Audio focus and the remote's volume keys, over the page's playback.
+[[wants.service]]
+id = "com.amazon.audio.control"
+
+# VoiceView reads the page, whose own accessibility tree it takes.
+[[wants.service]]
+id = "com.amazon.kepler.ucc.publisher"
+
+[[wants.service]]
+id = "com.amazon.gipc.uuid.*"
+
+[offers]
+[[offers.service]]
+id = "com.amazon.gipc.uuid.*"
+
+[components]
+[[components.interactive]]
+id = "com.amazondeveloper.aiostreamsvega.main"
+runtime-module = "/com.amazon.kepler.runtime.react_native_kepler_4@IReactNativeKepler_0"
+launch-type = "singleton"
+categories = ["com.amazon.category.main"]

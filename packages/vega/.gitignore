@@ -1,0 +1,45 @@
+# Vega OS build outputs
+build/
+dist/
+buildinfo.json
+*.vpkg
+*.vpkg.map
+*.ipk
+*.wgt
+*.apk
+*.aab
+generated/
+.vega/
+
+# The web client's standalone bundle, synced in by `npm run sync-web`
+assets/
+
+# Dependencies
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.keystore
+*.jks
+*.key
+
+# Test and editor clutter
+.tmp/
+coverage/
+.vscode/
+.idea/
+*.iml
+*.swp
+.DS_Store
+npm-debug.log*
+yarn-error.log*
+
+# Native build leftovers
+CMakeUserPresets.json
+*.so
+*.node
+*.wasm

@@ -1,5 +1,8 @@
 packages:
   - packages/*
+  # The Vega app is a React Native project with its own npm install, like
+  # packages/android and packages/desktop, and stays outside the workspace.
+  - '!packages/vega'
 
 allowBuilds:
   '@webos-tools/cli': false
