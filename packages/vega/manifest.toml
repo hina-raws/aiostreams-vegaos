@@ -2,10 +2,13 @@ schema-version = 1
 
 [package]
 title = "AIOStreams"
-version = "0.1.0"
+version = "0.1.1"
 # Floor so local builds pass vpt validate; pass an increasing --build-number for every Appstore upload.
-build-number = 1
+build-number = 2
 id = "com.amazondeveloper.aiostreamsvega"
+# 512x512 PNG under assets/image/, which `scripts/sync-web.mjs` puts there: without
+# it the launcher draws its default tile and the app is hard to pick out.
+icon = "@image/app_icon.png"
 
 [os.version]
 min = "2.0"

@@ -99,6 +99,31 @@ launched, driven with the remote, read through the WebView's DevTools. Anything 
 untested rather than assumed. Treat the code as you would any other community port and review it before
 running it against your own server.
 
+## Changelog
+
+### 2026-11-25 — launcher icon
+
+**Fixed:** the app had no `[package] icon`, which the Vega manifest requires, so Fire TV drew its
+default tile — an unmarked square in "Your apps and channels" that was easy to miss. The build had been
+saying so all along (`[package.icon] Icon is not defined in the manifest. System default will be used.`).
+
+- Added a 512×512 icon at `packages/vega/icon/app_icon.png` (the AIOStreams mark on the app's own
+  `#070707` background), and `icon = "@image/app_icon.png"` in `manifest.toml`.
+- `scripts/sync-web.mjs` copies it into the package's `assets/image/` on every sync, because a sync
+  replaces `assets/` and the icon has to be inside the package.
+- Verified on a Fire TV Stick 4K: the tile now draws the icon, and focusing it names the app
+  **AIOStreams**.
+
+### 2026-11-24 — first public release
+
+- The AIOStreams client running on Vega OS in a React Native for Vega WebView shell
+  (`packages/vega`), with the client changes as commits on this branch: a `vega` host adapter, Vega
+  remote key codes, and codec-aware audio selection.
+- Verified on hardware: browsing, search, version lists, D-pad and Back, sign-in with Quick Connect or
+  UUID and password, servers over HTTPS and plain HTTP, 4K HEVC Main 10 video, AAC audio.
+- Known limit: this WebView decodes no Dolby and no DTS, and the server only direct plays, so versions
+  carrying only lossless audio play mute. The client now marks them and prefers playable ones.
+
 ## Licence and attribution
 
 - **AIOStreams** — © Viren070 and contributors, **AGPL-3.0-only**,

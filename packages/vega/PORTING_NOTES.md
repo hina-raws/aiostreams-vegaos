@@ -149,7 +149,16 @@ The build stages into `build/private/vega/<arch>/<type>/assets` and copies over 
 a deleted asset survives. Measured: after dropping 9.2 MB of WebGPU assets the `.vpkg` was still
 5.85 MB until `vega clean` — then 2.9 MB.
 
-### 4.9 Testing notes
+### 4.10 The launcher drew its default tile
+
+The app installed and ran, but "Your apps and channels" showed an unmarked square: the manifest had no
+`[package] icon`, which is a required field (512×512 PNG at `assets/image/`, max 1 MB), and the build had
+said so in its output all along — `[package.icon] Icon is not defined in the manifest. System default
+will be used.` The tile now draws the AIOStreams mark and is named after the manifest's `title`. The icon
+lives in `icon/` and `sync-web.mjs` copies it into `assets/image/`, because a sync replaces `assets/` and
+the icon must ship inside the package.
+
+### 4.11 Testing notes
 
 - The device drops to standby quickly and then `com.amazon.dev.shell.service` is gone: `vega device shell`,
   `device info` and screenshots all fail while ping and VDA still answer.

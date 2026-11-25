@@ -73,6 +73,12 @@ cpSync(from, to, {recursive: true});
 // page runs, so nothing asks for it. See `src/App.tsx`.
 rmSync(join(to, 'static', 'webgpu-player'), {recursive: true, force: true});
 
+// The launcher's tile, which the manifest names as `@image/app_icon.png` and
+// which has to sit inside the package's assets. Kept in `icon/` so a sync,
+// which replaces `assets/`, cannot lose it.
+mkdirSync(join(to, 'image'), {recursive: true});
+cpSync(join(root, 'icon', 'app_icon.png'), join(to, 'image', 'app_icon.png'));
+
 const version = JSON.parse(
   readFileSync(join(repo, 'package.json'), 'utf8'),
 ).version;

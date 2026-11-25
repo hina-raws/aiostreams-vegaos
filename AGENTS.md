@@ -83,6 +83,9 @@ vega device copy-logs -a SYSTEM_TOMBSTONE/acr --directory <existing-dir>   # cra
   exists before installing.
 - **`vega clean` after removing files from `assets/`.** The build copies over the staging directory
   without clearing it, so a deleted asset stays packaged.
+- **`manifest.toml` requires an icon.** `[package] icon` must name a 512×512 PNG that ships at
+  `assets/image/`; without it the launcher draws its default tile. The icon source lives in `icon/` and
+  `sync-web.mjs` copies it in, because a sync replaces `assets/`.
 - **Cleartext HTTP is blocked** by the WebView unless `manifest.toml` has
   `[network-traffic-policy.cleartext] allowed-domains`. `mixedContentMode` does not cover it.
 - **`navigator.gpu` exists but has no adapter** on this device, and the client treats the property's
